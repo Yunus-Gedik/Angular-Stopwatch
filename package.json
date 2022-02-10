@@ -1,0 +1,37 @@
+{
+  "name": "ng-stopwatch",
+  "version": "1.0.0",
+  "description": "Stopwatch angular-js component.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack serve --config webpack.dev.config.js --open",
+    "prod": "webpack --config webpack.prod.config.js",
+    "start": "http-server ./dist -o /index.html -p 4000 -c-1",
+    "pre-e2e": "webdriver-manager update --versions.chrome 92.0.4515.107 && webdriver-manager start --versions.chrome 92.0.4515.107",
+    "e2e": "protractor e2e-tests/protractor.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.piworks.net/yunus.gedik/ng-stopwatch.git"
+  },
+  "keywords": [],
+  "author": "Yunus Gedik",
+  "license": "ISC",
+  "devDependencies": {
+    "angular": "^1.8.2",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "css-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.2",
+    "mini-css-extract-plugin": "^2.2.0",
+    "optimize-css-assets-webpack-plugin": "^6.0.1",
+    "style-loader": "^3.2.1",
+    "webpack": "^5.50.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.8.0",
+    "protractor": "^7.0.0"
+  },
+  "dependencies": {
+    "http-server": "^0.11.2"
+  }
+}
