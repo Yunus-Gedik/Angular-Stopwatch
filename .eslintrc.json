@@ -1,0 +1,17 @@
+{
+    "env": {
+        "es2021": true,
+        "node": true
+    },
+    //"extends": [ "eslint:all", "plugin:angular/johnpapa"],
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module"
+    },
+    "rules": {
+        "no-console": "error",
+        "quotes": [ "error", "double" ],
+        "no-mixed-spaces-and-tabs": "error",
+        "indent": [ "error", 4 ]
+    }
+}
